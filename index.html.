@@ -6,56 +6,77 @@
     <title>Anita Moda & accesorios d´aMor</title>
     <style>
         body {
-            background-color: #ffd6e7;
             font-family: Arial, sans-serif;
+            margin: 0;
+            background: #ffe6f2; /* Fondo rosita */
+        }
+        header {
+            background: #ff66b3; /* Rosa fuerte */
+            padding: 25px;
             text-align: center;
-            color: #d63384;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
         }
-        h1 {
-            margin-top: 20px;
-            font-size: 32px;
+        .container {
+            width: 85%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
         }
-        p {
-            font-size: 18px;
-            margin-bottom: 30px;
+        .catalogo-title {
+            font-size: 22px;
+            color: #cc0066;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
         }
-        .catalogo {
+        .galeria {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            width: 90%;
-            margin: auto;
+            margin-top: 20px;
         }
-        .item {
-            background: white;
-            padding: 10px;
-            border-radius: 12px;
-            box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
-        }
-        .item img {
+        .galeria img {
             width: 100%;
+            height: 250px;
+            object-fit: cover;
             border-radius: 10px;
+            border: 3px solid #ffb3d9;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            background: #ff66b3;
+            color: white;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>Anita Moda & accesorios d´aMor</h1>
-    <p>Bienvenidos a nuestra página de Anita Moda & accesorios d´aMor.  
-    Acá tienes el catálogo de nuestros productos:</p>
 
-    <div class="catalogo">
-        <div class="item">
-            <img src="WhatsApp Image 2025-12-02 at 9.20.16 PM.jpeg" alt="">
-            <p>Producto 1</p>
-        </div>
-        <div class="item">
-            <img src="WhatsApp Image 2025-12-02 at 9.20.17 PM.jpeg" alt="">
-            <p>Producto 2</p>
-        </div>
-        <div class="item">
-            <img src="WhatsApp Image 2025-12-02 at 9.20.22 PM.jpeg" alt="">
-            <p>Producto 3</p>
-        </div>
+<header>
+    Anita Moda & accesorios d´aMor
+</header>
+
+<div class="container">
+    <p class="catalogo-title">Bienvenidos a nuestra página de Anita Moda & accesorios d´aMor. Acá tienes el catálogo de nuestros productos:</p>
+
+    <div class="galeria">
+        <!-- Aquí puedes insertar tus imágenes -->
+        <img src="WhatsApp Image 2025-12-02 at 9.20.17 PM.jpeg">
+        <img src="WhatsApp Image 2025-12-02 at 9.20.17 PM.jpeg">
+        <img src="WhatsApp Image 2025-12-02 at 9.20.20 PM.jpeg">
+        <img src="WhatsApp Image 2025-12-02 at 9.20.22 PM.jpeg">
     </div>
+</div>
+
+<footer>
+    © 2025 - Anita Moda & accesorios d´aMor
+</footer>
+
 </body>
 </html>
